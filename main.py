@@ -2,9 +2,9 @@ import csv
 from datetime import datetime
 
 
-def load_data(file_path):
+def load_data(budget_data.csv):
     data = []
-    with open(file_path, mode='r', newline='') as file:
+    with open(budget_data.csv, mode='r', newline='') as file:
         csv_reader = csv.reader(file)
         header = next(csv_reader)
         for row in csv_reader:
